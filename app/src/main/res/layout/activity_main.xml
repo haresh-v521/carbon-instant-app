@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:minHeight="55sp">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="35sp"
+            android:minHeight="40sp"
+            android:src="@drawable/ic_close" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Phonon X"
+                android:textColor="@color/blackLight"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                android:text="Demo &amp; Test"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgSpeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="35sp"
+            android:minHeight="40sp"
+            android:src="@drawable/ic_brand_speaker_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user"
+            app:civ_border_width="0dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:weightSum="0.5">
+
+        <RelativeLayout
+            android:id="@+id/rtlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:letterSpacing="0.05"
+                android:text="Travis Bogard February 15, 02:27 PM"
+                android:textColor="@color/blackLight"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23sp"
+                android:letterSpacing="0.05"
+                android:text="test, new top level message"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="0.00"
+                    android:textColor="@color/purple_700" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="0.55"
+                    android:src="@drawable/ic_audio_wave" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="0.12"
+                    android:text="0.00"
+                    android:textColor="@color/purple_700" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="0.12"
+                    android:src="@drawable/ic_brand_queue" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:text="1.0x"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:src="@drawable/ic_brand_rewind"
+                    android:textAlignment="center" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imgPlay"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    app:cardCornerRadius="75dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_brand_pause_button" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:src="@drawable/ic_brand_react"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:src="@drawable/ic_brand_mic_icon"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
